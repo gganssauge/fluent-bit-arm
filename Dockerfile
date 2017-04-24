@@ -1,10 +1,11 @@
 FROM hypriot/rpi-alpine-scratch:latest
-LABEL Description="Fluent Bit docker image" Vendor="Fluent Organization" Version="1.1"
+MAINTAINER ganssauge@gmx.de
+LABEL Description="Fluent Bit docker image for ARM" Version="1.1"
 
 # Fluent Bit version
 ENV FLB_MAJOR 0
 ENV FLB_MINOR 11
-ENV FLB_PATCH 0
+ENV FLB_PATCH 3
 ENV FLB_VERSION 0.11.3
 
 ENV FLB_TAR https://github.com/fluent/fluent-bit/archive/v$FLB_VERSION.zip
